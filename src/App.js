@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium from 'radium';
-import Person from './Person/Person'
+import Radium, {StyleRoot} from 'radium';
+import Persons from './components/Persons/Persons'
+import styled from 'styled-components'
+
+const StyledButton = styled.button`
+  background-color: ${props => props.alt ? 'red': 'green'};
+  font: inherit;
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${props => props.alt ? 'salmon': 'lightgreen'};
+    color: black;
+  }
+`;
 
 class App extends Component {
   state = {
@@ -43,40 +57,24 @@ class App extends Component {
   }
 
   render () {
-    const style = {
-      backgroundColor: 'green',
-      font: 'inherit',
-      border: '1px solid blue',
-      padding: '8px',
-      cursor: 'pointer',
-      ':hover': {
-        backgroundColor: 'lightgreen',
-        color: 'blank'
-      }
-    }
 
     let persons = null;
 
     if (this.state.showPersons){
       persons = (
         <div>
-          {this.state.persons.map((person, index) => {
-            return <Person
-              name={person.name}
-              age={person.age}
-              click={() => this.deletePersonHandler(index)}
-              key={person.id} 
-              changed={(event) => this.nameChangedHandler(event, person.id)}
+          <Persons
+            persons={this.state.persons}
+            clicked={this.deletePersonHandler}
+            changed={this.nameChangedHandler}
             />
-          })}
-
         </div>
         )
-        style.backgroundColor = 'red'
-        style[':hover'] = {
-          backgroundColor: 'salmon',
-          color: 'blank'
-        }
+        // style.backgroundColor = 'red'
+        // style[':hover'] = {
+        //   backgroundColor: 'salmon',
+        //   color: 'blank'
+        // }
     }
 
     let classes = [];
@@ -89,15 +87,16 @@ class App extends Component {
 
 
     return (
-      <div className="App">
-        <h1>Hi there, refresh!</h1>
-        <p className={classes.join(' ')}>I'm a paragraph</p>
-        <button
-          style={style}
-          onClick={this.togglePersonsHandler}
-        >Toggle Persons</button>
-        {persons}
-      </div>
+      <StyleRoot>
+        <div className="App">
+          <h1>Hi there, refresh!</h1>
+          <p className={classes.join(' ')}>I'm a paragraph</p>
+          <StyledButton alt={this.state.showPersons}
+            onClick={this.togglePersonsHandler}
+          >Toggle Persons</StyledButton>
+          {persons}
+        </div>
+      </StyleRoot>
     );
   }
 }

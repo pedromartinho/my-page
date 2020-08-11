@@ -30,3 +30,10 @@ test/*/public/packs
 *.swp
 /vendor/react
 react-builds/build
+
+.vscode/
+Documentation/
+ISSUE_TEMPLATE.md
+LICENSE.md
+gulpfile.js
+jsconfig.json

@@ -32,7 +32,3 @@ test/*/public/packs
 react-builds/build
 
 .vscode/
-Documentation/
-ISSUE_TEMPLATE.md
-LICENSE.md
-jsconfig.json

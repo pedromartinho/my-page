@@ -177,6 +177,18 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={nomad3}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={nomad4}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
                         </GridContainer>
                       ),
                     },
@@ -188,29 +200,31 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work1}
+                              src={tribrs1}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
+                              src={tribrs_mob1}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work4}
+                              src={tribrs_mob2}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work5}
+                              src={tribrs2}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={tribrs3}
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -225,29 +239,31 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work4}
+                              src={muvsy1}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={studio3}
+                              src={muvsy_mob1}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work2}
+                              src={muvsy_mob2}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work1}
+                              src={muvsy2}
                               className={navImageClasses}
                             />
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={studio1}
+                              src={muvsy3}
                               className={navImageClasses}
                             />
                           </GridItem>

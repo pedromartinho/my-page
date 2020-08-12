@@ -44,17 +44,6 @@ import muvsy1 from "assets/img/muvsy/muvsy1.jpeg";
 import muvsy2 from "assets/img/muvsy/muvsy2.jpeg";
 import muvsy3 from "assets/img/muvsy/muvsy3.jpeg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
@@ -117,10 +106,22 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Pedro Martinho</h3>
                     <h6>SOFTWARE ENGINEER</h6>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button
+                      justIcon
+                      link
+                      className={classes.margin5}
+                      href="https://github.com/pedromartinho"
+                      target="_blank"
+                    >
                       <i className={"fab fa-github"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button
+                      justIcon
+                      link
+                      className={classes.margin5}
+                      href="https://www.linkedin.com/in/pedrojorgemartinho/"
+                      target="_blank"
+                    >
                       <i className={"fab fa-linkedin"} />
                     </Button>
                   </div>
@@ -153,7 +154,7 @@ export default function ProfilePage(props) {
                       tabIcon: NomadIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={nomad1}
@@ -164,8 +165,13 @@ export default function ProfilePage(props) {
                               src={nomad_mob1}
                               className={navImageClasses}
                             />
+                            <img
+                              alt="..."
+                              src={nomad3}
+                              className={navImageClasses}
+                            />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={nomad_mob2}
@@ -174,13 +180,6 @@ export default function ProfilePage(props) {
                             <img
                               alt="..."
                               src={nomad2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={nomad3}
                               className={navImageClasses}
                             />
                             <img
@@ -197,7 +196,7 @@ export default function ProfilePage(props) {
                       tabIcon: TribrsIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={tribrs1}
@@ -208,8 +207,13 @@ export default function ProfilePage(props) {
                               src={tribrs_mob1}
                               className={navImageClasses}
                             />
+                            <img
+                              alt="..."
+                              src={tribrs3}
+                              className={navImageClasses}
+                            />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={tribrs_mob2}
@@ -221,13 +225,6 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={tribrs3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
                         </GridContainer>
                       ),
                     },
@@ -236,7 +233,7 @@ export default function ProfilePage(props) {
                       tabIcon: MuvsyIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={muvsy1}
@@ -247,8 +244,13 @@ export default function ProfilePage(props) {
                               src={muvsy_mob1}
                               className={navImageClasses}
                             />
+                            <img
+                              alt="..."
+                              src={muvsy3}
+                              className={navImageClasses}
+                            />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
+                          <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
                               src={muvsy_mob2}
@@ -257,13 +259,6 @@ export default function ProfilePage(props) {
                             <img
                               alt="..."
                               src={muvsy2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={muvsy3}
                               className={navImageClasses}
                             />
                           </GridItem>

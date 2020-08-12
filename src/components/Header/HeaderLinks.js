@@ -32,7 +32,7 @@ export default function HeaderLinks(props) {
           buttonText="Download CV"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={CloudDownload}
           dropdownList={[
@@ -49,7 +49,7 @@ export default function HeaderLinks(props) {
               className={classes.dropdownLink}
             >
               PT
-            </a>
+            </a>,
           ]}
         />
       </ListItem>
@@ -79,7 +79,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-linkedin"
-          title="Check my LinkedIn page"
+          title="Check my LinkedIn"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >

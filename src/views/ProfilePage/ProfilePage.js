@@ -162,12 +162,12 @@ export default function ProfilePage(props) {
                             />
                             <img
                               alt="..."
-                              src={nomad_mob1}
+                              src={nomad3}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={nomad3}
+                              src={nomad_mob1}
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -204,12 +204,12 @@ export default function ProfilePage(props) {
                             />
                             <img
                               alt="..."
-                              src={tribrs_mob1}
+                              src={tribrs3}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={tribrs3}
+                              src={tribrs_mob1}
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -241,12 +241,12 @@ export default function ProfilePage(props) {
                             />
                             <img
                               alt="..."
-                              src={muvsy_mob1}
+                              src={muvsy3}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={muvsy3}
+                              src={muvsy_mob1}
                               className={navImageClasses}
                             />
                           </GridItem>

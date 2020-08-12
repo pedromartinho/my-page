@@ -30,3 +30,5 @@ test/*/public/packs
 *.swp
 /vendor/react
 react-builds/build
+
+.vscode/

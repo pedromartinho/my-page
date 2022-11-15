@@ -85,7 +85,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.linkedin.com/in/pedrojorgemartinho/"
+            href="https://www.linkedin.com/in/pjemartinho/"
             target="_blank"
             className={classes.navLink}
           >

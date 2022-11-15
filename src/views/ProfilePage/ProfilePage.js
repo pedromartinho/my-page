@@ -188,14 +188,6 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <Button
-                            href="https://app.nomadcard.city"
-                            target="_blank"
-                            color="grey"
-                            className={classes.navLink}
-                          >
-                            Visit Nomad Card
-                          </Button>
                         </GridContainer>
                       ),
                     },
@@ -233,14 +225,6 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <Button
-                            href="https://app.tribrs.com/"
-                            target="_blank"
-                            color="grey"
-                            className={classes.navLink}
-                          >
-                            Visit Tribrs
-                          </Button>
                         </GridContainer>
                       ),
                     },
@@ -278,14 +262,6 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <Button
-                            href="https://dev-telog.muvsy.com"
-                            target="_blank"
-                            color="grey"
-                            className={classes.navLink}
-                          >
-                            Visit Muvsy
-                          </Button>
                         </GridContainer>
                       ),
                     },
